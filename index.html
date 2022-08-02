@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Federal Bureau of Investigation</title>
+        <link rel="Fshortcut icon" type="image/png" href="FBI.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: #afafaf;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
+        #btn{
+            width: 200px;
+            height: 100px;
+            border-width: 4px;
+            border-radius: 18px;
+            font-size: 25px;
+            font-weight: bold;
+            color: darkred;
+            cursor: pointer;
+        }
+        #btn:active{
+            font-size: 20px;
+            color: rgb(66, 0, 0);
+        }
+    </style>
+    <body>
+        <center>
+        <h1>We need your help!</h1><br/><br/>
+        <p>A Richard David James Look-a-like is on loose with a killing spree of 10!</p><br/>
+        <p>We need your help as soon as possible! <b><a href="details.html" onclick="audio.play();" target="_self">click this for more details!</a></b></p><br/><br/>
+
+        <a href="wanted.png" target="_blank"><img src="wanted.png" onclick="audio.play();"></a>
+        <li>Ways to help:
+            <ul>
+                <li>Contact police if the face of the individual looks similar of the one you saw</li>
+            </ul>
+        </li>
+        <table border="10" cellpadding="10" cellspacing="2">
+            <tr>
+                <th>Bounty</th>
+                <th>Month till bounty increases</th>
+                <th>Amount of bounty increased</th>
+            </tr>
+            <tr>
+                <td>10000$</td>
+                <td>September</td>
+                <td>25000$</td>
+            </tr>
+        </table><br/><br/><br/>
+        <a href="https://www.youtube.com" target="_blank">
+            <button id="btn" onclick="audio.play();">Sound Test</button>
+        </a>
+        <script type="text/javascript">
+            const audio = new Audio();
+            audio.src = "./click.mp3";
+        </script>
+        </center>
+    </body>
+</html>
